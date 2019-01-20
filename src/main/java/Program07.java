@@ -44,7 +44,7 @@ public class Program07 {
             @Override
             public void onSubscribe(Subscription subscription) {
                 log.info("onSubscribe");
-                subscription.request(3);
+                subscription.request(Long.MAX_VALUE);
             }
 
             @Override
